@@ -1,6 +1,8 @@
 # Netflix GPT
 -vite project creation
 -configured Tailwind css
+-Header
+ -login form
 
 
 
