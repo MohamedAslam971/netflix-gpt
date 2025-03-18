@@ -14,7 +14,14 @@
 -Create Redux store with userSlice
 -Implimented SignOut
 -Update Profile
--Fetch from TMDB movies
+-BugFlix: Sign up user displayName and Profile picture update
+-BugFlix: if the user is not logged in redirect to /browse to login page and vice-versa
+-unsubscribed to the onAuthStateChanged callback
+-Add hardcoded values to the constants file
+-register TMDB API & create an app & get access token
+-get Data from TMDB now playing movies list API
+
+
 
 
 
