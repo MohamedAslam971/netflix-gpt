@@ -14,7 +14,7 @@ const MainContainer = () => {
 
   const { original_title, overview, id } = mainMovies;
 
-  return (
+  return mainMovies && (
     <div>
       <VideoTitle title={original_title} overview={overview} movieId={id} />
       <VideoBackground movieId={id} />

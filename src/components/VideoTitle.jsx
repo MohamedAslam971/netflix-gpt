@@ -7,10 +7,11 @@ const VideoTitle = ({ title, overview, movieId }) => {
 
   useMovieLogo(movieId);
 
-  console.log(logo);
+  console.log(logo?.length);
   if (!logo) return;
 
-  const logoPath = logo.length > 0 ? logo[1].file_path : logo[0].file_path; 
+  const logoPath = logo?.length > 0 ? logo[1]?.file_path : logo[0]?.file_path;
+  // const logoPath =logo[0].file_path;
 
   console.log(logoPath);
 
@@ -44,9 +45,9 @@ const VideoTitle = ({ title, overview, movieId }) => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="white"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             xmlns="http://www.w3.org/2000/svg"
           >
             <circle cx="12" cy="12" r="10" />

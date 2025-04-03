@@ -28,6 +28,12 @@
 -Update Store with Trailer Video Data
 -Embedded the Youtube video and make it autoplay and mute
 -Tailwind classes to make Main Coontainer look awesome
+-Bulid Secondary component
+-Bulid Movie List
+-Bulid Movie Card
+-TMDB Image CDN URL
+-made the browse page amazing using the tailwind css
+-usePopularMovies custom hook
 
 
 
