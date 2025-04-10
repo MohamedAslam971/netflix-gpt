@@ -7,23 +7,23 @@ const VideoTitle = ({ title, overview, movieId }) => {
 
   useMovieLogo(movieId);
 
-  console.log(logo?.length);
+  // console.log(logo?.length);
   if (!logo) return;
 
-  const logoPath = logo?.length > 0 ? logo[1]?.file_path : logo[0]?.file_path;
-  // const logoPath =logo[0].file_path;
+  // const logoPath = logo?.length > 0 ? logo[1]?.file_path : logo[0]?.file_path;
+  const logoPath =logo[0].file_path;
 
-  console.log(logoPath);
+  // console.log(logoPath);
 
   return (
-    <div className="w-full aspect-[16/9] pt-[15%] px-12 absolute text-white bg-gradient-to-r from-black">
+    <div className="w-full aspect-[16/9] pt-[12%] px-12 absolute text-white bg-gradient-to-r from-black">
       <img
-        className="w-4/12"
+        className="w-3/12"
         src={"https://image.tmdb.org/t/p/original" + logoPath}
         alt="movieLogo"
       />
       {/* <h1 className="text-5xl font-bold w-4/12">{title}</h1> */}
-      <p className="py-4 text-lg w-1/4">{overview}</p>
+      <p className="py-4 text-md w-1/4">{overview}</p>
 
       <div className="flex gap-4">
         <button className="flex items-center gap-2 bg-white font-semibold p-4 px-12 text-xl rounded-lg  cursor-pointer text-black transition duration-300 ease-in-out hover:bg-gray-300 hover:scale-105 active:scale-95">

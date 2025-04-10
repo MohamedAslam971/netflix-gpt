@@ -11,7 +11,7 @@ const useMovieLogo = (movieId) => {
       API_OPTIONS
     );
     const json = await data.json();
-    console.log(json);
+    // console.log(json);
     const filteredLogo = json.logos.filter((logo) => {
       return logo.iso_639_1 === "en" && logo.file_path.endsWith(".png");
     });

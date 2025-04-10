@@ -12,5 +12,27 @@ export const API_OPTIONS = {
   },
 };
 
+export const BG_URL =
+  "https://assets.nflxext.com/ffe/siteui/vlv3/42a0bce6-fc59-4c1c-b335-7196a59ae9ab/web/AE-en-20250303-TRIFECTA-perspective_a7fc1d14-d272-4127-85b3-41f53ee7e23b_large.jpg";
 
-export const IMG_CDN_URL ="https://image.tmdb.org/t/p/w300";
+export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w300";
+
+
+export const SUPPORTED_LANDUAGES = [
+  {
+    identifier: "en",
+    name :"English"
+  },
+  {
+    identifier: "hindi",
+    name :"Hindi"
+  },
+  {
+    identifier: "arabic",
+    name :"Arabic"
+  },
+  {
+    identifier: "spanish",
+    name :"Spanish"
+  }
+];
